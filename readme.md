@@ -17,9 +17,10 @@
 - The commands that come pre-installed with the bot are:
   - `/ping`: Returns the latency of the bot.
   - `/eval <code>`: Evaluates the code provided.
-- Add your own commands by adding new files to the `commands` directory.
-  - You can add folders to the `commands` directory to group commands together.
-  - When adding new commands, make sure to follow this structure:
+
+* Add your own commands by adding new files to the `commands` directory.
+  * You can add folders to the `commands` directory to group commands together.
+  * When adding new commands, make sure to follow this structure:
 
 ```ts
 import { type CommandOptions, Command } from '@sapphire/framework';
@@ -55,9 +56,9 @@ export class UserCommand extends Command {
 - The only event that is pre-installed with the bot is the `ready` event.
   - This just logs that the bot is online, and you can use it to do things like set the bot's status.
 
-- Add your own events by adding new files to the `listener` directory.
-  - You can add folders to the `listener` directory to group events together.
-  - When adding a new event, make sure to follow this structure:
+* Add your own events by adding new files to the `listener` directory.
+  * You can add folders to the `listener` directory to group events together.
+  * When adding a new event, make sure to follow this structure:
 
 ```ts
 import { Listener, type ListenerOptions } from '@sapphire/framework';
