@@ -42,6 +42,21 @@ export class UserCommand extends Command {
 }
 ```
 
+- If you would like to add options to the command, you can do so by adding an override to the `registerApplicationCommand` method.
+  - Example:
+
+```ts
+public override registerApplicationCommands(registry: ApplicationCommandRegistry) {
+  registry.registerChatInputCommand({
+    name: this.name, // The name of the command. this.name uses the name from the decorator.
+    description: this.description, // The description of the command. this.description uses the description from the decorator.
+    options: [] // put your options here
+    });
+  }
+```
+
+---
+
 ### **Events**
 
 **Notes:**
